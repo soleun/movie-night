@@ -2,7 +2,7 @@ h1. MovieNight with "Neo4j":http://neo4j.org/
 
 A mashup  using Facebok Graph API and Neo4j in tandem.
 
-!webapp/img/movienight.png!
+!http://github.com/neo4j-examples/movie-night/raw/master/webapp/img/movienight.png!
 
 h2. Installation
 

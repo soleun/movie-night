@@ -1,0 +1,62 @@
+h1. MovieNight with "Neo4j":http://neo4j.org/
+
+A mashup  using Facebok Graph API and Neo4j in tandem.
+
+!webapp/img/movienight.png!
+
+h2. Installation
+
+*Get a copy of JRuby 1.4 for your platform*
+
+For Ubuntu Lucid:
+@sudo apt-get install jruby@
+
+Downloads: "jruby.org":http://jruby.org/download
+
+Make sure to add JRuby to your PATH after installation,
+if it's not already there.
+
+*Install backend dependencies*
+
+The backend depends on the following ruby gems:
+* jruby-openssl (0.6)
+* json-jruby (1.2.4)
+* neo4j (0.4.3)
+* rack (1.1.0)
+* sinatra (1.0)
+
+For Ubuntu you would do:
+@sudo jruby -S gem install jruby-openssl json-jruby neo4j rack sinatra@
+
+*Start the backend*
+
+In a console, navigate to the @backend/@ directory and run:
+@jruby neo4j_app.rb@
+
+Open a web-browser and go to "http://localhost:4567/":http://localhost:4567/
+
+This will trigger a one-time indexing operation, you can follow the progress
+of it in the console. It will take 1-5 minutes, when it's done your web browser
+should display a set of JSON data.
+
+h2. Running the example
+
+*Start the local example*
+      
+Open the @webapp/index-LOCAL.html@ file in a web-browser. Click on one of the two "friends"
+to get a movie suggestion.
+
+*Start the facebook-connected example*
+
+Move the contents of the @webapp@ -folder into a web server. Go to index.html with your browser.
+
+You can use a local domain, it deosn't need to be exposed to the outside world at all.
+
+Register an application on "facebook.com":http://facebook.com/, make sure to add the (local) domain
+to the Connect settings and then add the application id you get to @webapp/js/MovieNight.js@
+(scroll down near the end of the file, and you'll see where to put it).
+
+*Hack the example*
+     
+The main example entry point is in @webapp/js/MovieNight.js@. There are comments in that file that
+should send you on your merry way to explore what exactly is going on.

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+      <link rel="stylesheet" type="text/css" href="style.css" />
+
+      <title>MovieNight</title>
+
+      <script type="text/javascript" src="js/vend/voltconnect.js"></script>
+      <script type="text/javascript" src="js/vend/jquery-1.3.2.min.js"></script>      
+      <script type="text/javascript" src="js/SuggestionEngine.js"></script>
+      <script type="text/javascript" src="js/MovieNight.js"></script>
+
+   </head>
+
+   <body>
+      <div id="contents">
+         <div id="header">            
+            <h1 class="logo">MovieNight <span class="sub">with</span></h1>
+            <h1 class="neo"><a title="Try Graphs, Gremlin and Neo4j!" href="/"><span>Gremlin Web Console</span></a></h1>
+         </div>
+
+         <div id="inner-contents">
+            <div id="friend-selection-box">
+               <h2>I'm gonna watch a movie with..</h2>
+               <ul id="friendlist"><li>Loading friends..</li></ul>
+            </div>
+         
+            <div id="movie-suggestions-box">
+               <h2></h2>
+               <p></p>
+            </div>
+         </div>
+      </div>
+
+      <div id="fb-root"></div>
+
+   </body>
+
+</html>

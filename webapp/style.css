@@ -1,0 +1,25 @@
+html, body { margin:0; padding: 0; }
+body { font-family: "Lucida Sans", "Trebuchet MS", sans-serif; background:#ECF4F7 url(img/bg.gif) repeat-x; }
+
+h2 { font-size: 0.9em; }
+
+/* Page contents */
+#contents { width: 750px; margin: 0 auto; }
+#inner-contents { width: 650px; margin: 0 50px; padding: 4px 5px; background: #FFF; height: 350px; }
+
+/* Header */
+#header h1 { display:block; float:left; }
+#header h1.logo { color: #fff; padding: 20px 5px 0 30px; }
+#header h1.logo span.sub { font-size:0.8em; color: #eee; }
+#header h1.neo { margin:0; padding: 30px 0 0 10px; display:block; background: url(img/logo.gif) 10px 30px no-repeat; width:217px; height:58px; }
+#header h1.neo a { display:block; width: 217px; height: 58px; }
+#header h1.neo a span { position:absolute; top:-1000px; }
+
+#header {  width: 960px; height:104px; background:url(img/header.png) no-repeat; }
+
+/* Main elements */
+#friend-selection-box { width:300px; float:left; height: 300px; overflow:auto; }
+#friendlist { list-style:none; padding:0; margin:0; }
+#friendlist li { padding:4px; margin:0; }
+
+#movie-suggestions-box { width:300px; float:left; }

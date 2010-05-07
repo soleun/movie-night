@@ -4,6 +4,8 @@ A mashup  using Facebok Graph API and Neo4j in tandem.
 
 !http://github.com/neo4j-examples/movie-night/raw/master/webapp/img/movienight.png!
 
+~Note: read this file at http://github.com/neo4j-examples/movie-night for proper formatting~
+
 h2. Installation
 
 *Get a copy of JRuby 1.4 for your platform*
